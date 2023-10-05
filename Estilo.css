@@ -1,0 +1,407 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/**************************************************************/
+/*OCULTAR CONTENIDO*/
+#contenido-uno{
+    display: none;
+}
+/*OCULTAR CONTENIDO*/
+#contenido-dos{
+    display: none;
+}
+
+
+/**************************************************************/
+/*DIESEÑO MENUS ELECCION*/
+#BotonMostrarUno{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 580px;
+    height: 70px;
+    text-align: center;
+    line-height: 60px;
+    background: #262626;
+    letter-spacing: 6px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: verdana;
+    border-radius: 60px;
+    border: 4px solid black;
+    box-shadow: inset 0 0 30px rgba(0,0,0,1);
+    overflow: hidden;
+    display: block;
+}
+#BotonMostrarDos{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 580px;
+    height: 70px;
+    text-align: center;
+    line-height: 60px;
+    background: #262626;
+    letter-spacing: 6px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: verdana;
+    border-radius: 60px;
+    border: 4px solid black;
+    box-shadow: inset 0 0 30px rgba(0,0,0,1);
+    overflow: hidden;
+    display: block;
+}
+#BotonOcultarUno{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 70px;
+    text-align: center;
+    line-height: 27px;
+    background: #262626;
+    letter-spacing: 3px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: verdana;
+    border-radius: 60px;
+    border: 4px solid black;
+    box-shadow: inset 0 0 30px rgba(0,0,0,1);
+    overflow: hidden;
+}
+#BotonOcultarDos{
+    position: absolute;
+    top: 79%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 70px;
+    text-align: center;
+    line-height: 27px;
+    background: #262626;
+    letter-spacing: 3px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: verdana;
+    border-radius: 60px;
+    border: 4px solid black;
+    box-shadow: inset 0 0 30px rgba(0,0,0,1);
+    overflow: hidden;
+}
+#BotonMostrarUno::before,
+#BotonMostrarDos::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -70px;
+    width: 85%;
+    height: 100%;
+    background: rgba(255,255,255,.1);
+    transition: .7s;
+    transform: skewX(-15deg);
+}
+#BotonMostrarUno:hover:before,
+#BotonMostrarDos:hover:before,
+#BotonOcultarUno:hover:before,
+#BotonOcultarDos:hover:before{
+    left: 500px;
+}
+#BotonMostrarUno::after,
+#BotonMostrarDos::after,
+#BotonOcultarUno::after,
+#BotonOcultarDos::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -90px;
+    width: 150%;
+    height: 100%;
+    background: rgba(255,255,255,.1);
+    transition: .5s;
+    transform: skewX(-15deg);
+    transition-delay: .3s;
+}
+#BotonMostrarUno:hover::after,
+#BotonMostrarDos:hover::after,
+#BotonOcultarUno:hover::after,
+#BotonOcultarDos:hover::after{
+    left: 100px;
+}
+#YoInicio{
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+}
+
+/**************************************************************/
+/*MENU*/
+
+nav  #logo{
+    width: 180px;
+    height: 180px;
+    position: fixed;
+    top: -60px;
+    left: 20px;
+    padding: 30px 0px;
+}
+nav  #perfil{
+    width: 160px;
+    height: 170px;
+    position: fixed;
+    top: 130px;
+    left: 30px;
+    padding: 30px 0px;
+    border-radius: 50%;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 100%;
+    padding: 350px 0px;
+    box-sizing: border-box;
+    background-color: #262626; 
+    z-index: 1;
+
+}
+nav ul{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    list-style: 60px;
+    color: #fff;
+    padding: 5px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 40px;
+    transition: .5s;
+}
+
+
+/**************************************************************/
+/*PORTADA*/
+
+.portada{
+    position: relative;
+    top: -18px;
+    float: right;
+    width: 90%;
+    height: 100%;
+}
+.portada img{
+    width: 100%;
+    height: 100%;
+}
+.portada h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 6em;
+    width: 100%;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**************************************************************/
+/*ARTICULOS*/
+
+article{
+    position: relative;
+    width: 80%;
+    float: right;
+}
+article h1{
+    position: absolute;
+    top: 70px;
+    right:  -170px;
+    font-size: 50px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    text-transform: uppercase;
+    text-shadow: 0 5px 10px rgba(0,0,0,1);
+    mix-blend-mode: overlay;
+    box-shadow: 0 5px 10px rgba(0,0,0,1);
+    background: rgba(0,0,0,.5);
+}
+article p{
+    width: 60%;
+    font-size: 20px;
+    text-align: justify;
+    float: right;
+    left: 10px;
+    padding: 0 20px 0 0 ;
+}
+article .img1{
+    width: 400px;
+    height: 100%;
+    position: relative;
+    top: -100px;
+    padding: 30px 0px;
+}
+article .img2{
+    width: 250px;
+    height: 100%;
+    position: relative;
+    top: -50px;
+    padding: 70px 120px 0 0 ;
+    float: right;
+}
+article #Curso{
+    width: 60%;
+    font-size: 20px;
+    
+} 
+article #Info-Curso{
+    width: 60%;
+    font-size: 17px;
+    text-align: justify;
+    color: #15117B;
+}
+
+
+/**************************************************************/
+/*footer*/
+
+footer{
+    position: relative;
+    border: 1px solid #000;
+    width: 90%;
+    height: 100px;
+    float: right;
+    background-color: #262626; 
+}
+footer p{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+/**************************************************************/
+/*AGREGAR TAREAS*/
+
+ .Contenedor_Tarea{
+    position: absolute;
+    transform: translsate(-50%, -50%);
+    top: 10%;
+    left: 10%;
+    width: 40%;
+    padding: 40px;
+    background: rgba(255,255,255,.1);
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    border-radius: 20px;    
+}
+.Contenedor_Tarea #TituloTarea{
+    text-align: center;
+    color: black;
+    
+}
+.Contenedor_Tarea #Buscador{
+    position: relative;
+    width: 100%;
+    
+}
+.Contenedor_Tarea #Buscador .BotonAgregar{
+    position: relative;
+    left: 95%;
+    top: -40px;
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: green;
+    color: white;
+}
+.Contenedor_Tarea #Buscador input{
+    background: none;
+    color: #221a3d;  /* #c6c6c6 */
+    font-size: 24px;
+    padding: 10px 10px 10px 5px;
+    display: block; /* separa texto de input */
+    width: 90%;
+    border:none; /* quita bordes */
+    border-bottom: 1px solid;/*  pone linea inferior */
+}
+.Contenedor_Tarea #Buscador input:focus{   /* efectos al darle click */
+    outline: none; 
+    background: rgba(207, 203, 203, 0.26);
+    
+}
+.Contenedor_Tarea #Buscador  label{
+    font-size: 24px; /* tamaño de letra */
+    color: #2196f3;  /* color de letra */
+    position: absolute;   /* funcion para poder mover las letras */
+    left: 5px;
+    top: 10px;
+    transition: 0.5s aese all;  /* animacion para mover las letras */
+    pointer-events: none; /* quitar efectos del mause al pasar */
+}
+
+.Contenedor_Tarea #Buscador input:focus ~label,
+.Contenedor_Tarea #Buscador input:valid~label{ 
+    top: -24px;
+    font-size: 20px;
+}
+.Contenedor_Tarea .li-añadido{
+    width: 120%;
+    position: relative;
+    font-size: 20px;
+    left: 10%;
+}
+
+.Contenedor_Tarea .li-añadido ul{
+    list-style: none;
+    width: 70%;
+    
+}
+.Contenedor_Tarea .li-añadido li{
+    border: solid 1px #F4F6F6;
+    width: 70%;
+    padding: 15px;
+    margin: 20px;
+    background-color: #F4F6F6;
+}
+.Contenedor_Tarea .li-añadido li .BotonEliminar{
+    border: solid 1px transparent;
+    padding: 10px;
+    background: red;
+    color: white;
+    position: absolute;
+    left: 25px;
+    margin-top: -7px;
+}
+#YoEntero{
+    position: absolute;
+    transform: translsate(-50%, -50%);
+    top: 10%;
+    left: 65%;
+    width: 200px;
+}

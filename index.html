@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+    <title>CORTE 1 HTML Y CSS</title>
+    <script src="EleccionPrincipal.js"></script>
+</head>
+<body>
+    <img src="Yo con PC.png" alt="YO" id="YoInicio">
+    <button id="BotonMostrarUno" onclick="mostrarUno();">Monstrar Portafolio</button>
+    <div id="contenido-uno">
+       
+        <nav>
+            <div class="Menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                                <img src="Logo.png" id="logo"> 
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="Yo.png" id="perfil">
+                        </a>
+                    </li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#SobreMi">Sobre Mi</a></li>
+                    <li><a href="#Educacion">Educacion</a></li>
+                    <li>
+                        <button id="BotonOcultarUno" onclick="OcultarUno();">Ocultar Contenido</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <div>
+            <div class="portada">
+                <section class="imagen">
+                    <img src="Portada.jpg">
+                    <h1>¡ TU DESTINO LO PROGRAMAS TU !</h1>
+                </section>
+                
+    
+            </div>
+            <article>
+                <a href="#" id="SobreMi">
+                    <h1>&nbsp;&nbsp;&nbsp;&nbsp; Sobre Mi &nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                    <br><br><br><br><br><br><br>
+                </a>
+                <img src="Yo con PC.png" class="img1"> 
+                <p>
+                    Mi Nombre es Sebastian Perez, Actualmente tecnico en sistemas con el sueño de convertirme en 
+                    desarrollador de software.<br><br>
+                    Empece desde muy pequeño a indagar que hace que funcione las cosas 
+                    en la tecnologia, con la ayuda de internet logre avanzar dando pasos aun mas amplios
+                    a este mundo y pude aprender por mi cuenta.<br><br>
+                    Las tecnologias se actualizan tanto que nunca es tarde para aprender, cualquiera que 
+                    tenga interes su puede introducir a este medio. <br><br>
+                    Este mundo cambia tan deprisa que cada vez hay mas formas de realizar una misma idea 
+                    con ayuda de los medios digitales y aun mas con la programacion.
+                </p>
+            </article>
+            <article>
+                <a href="#" id="Educacion">
+                    <h1>&nbsp;&nbsp;&nbsp; Educacion &nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                    <br><br><br><br><br><br><br>
+                </a>
+                <img src="Yo Cuerpo Entero.png" class="img2">
+                <p><br><br>
+                    <span id="Curso">Tecnico Laboral en Mantenimiento y Sistemas de Computo - ANDAP </span><br>
+                    <span id="Info-Curso">21 - Octubre - 2018 (Culminado) </span><br><br>
+                    <span id="Curso">Tecnico en Sistemas - SENA   </span><br>
+                    <span id="Info-Curso">29 - Abril - 2020 (Culminado) </span><br><br>
+                    <span id="Curso">Curso HTML 5 Basico - UDEMY </span><br>
+                    <span id="Info-Curso">27 - Julio - 2020 (Culminado) </span><br><br>
+                    <span id="Curso">Curso CSS 3 Basico - UDEMY </span><br>
+                    <span id="Info-Curso">25 - Septiembre - 2020 (Culminado) </span><br><br>
+                    <span id="Curso">Tecnologo en Desarrollo de Software - SENA </span><br>
+                    <span id="Info-Curso">(En Curso - 2023) </span><br><br>
+                    <span id="Curso">Desarrollo de Software - PARQUESOFT </span><br>
+                    <span id="Info-Curso">(En Curso - 2023) </span><br><br>
+    
+                </p>
+            </article>
+        </div>
+    
+        <footer>
+            <p><br>Pagina Hecha por @SSEBASTHIAN PEREZ y Amor :v</p>
+            
+        </footer>
+        
+    </div>
+    <button id="BotonMostrarDos" onclick="mostrarDos();">Monstrar Lista</button>
+    <div id="contenido-dos" >
+        <img src="Yo Cuerpo Entero.png" id="YoEntero">
+        <button id="BotonOcultarDos" onclick="OcultarDos();">Ocultar Contenido</button>
+    <div class="Contenedor_Tarea">
+        <h1 id="TituloTarea">Lista de Tareas</h1>
+        
+        <div id="Buscador">
+            <form>
+                <input type="text" placeholder=""  class="inputform">
+                <label for="">Agregar tarea...</label>
+                <button class="BotonAgregar">+</button>
+            </form>
+        </div>
+        <div class="li-añadido">
+            <ul>
+                
+            </ul>
+        </div>
+        
+    </div>
+    </div>
+    <script src="ListAgregarQuitar.js"></script>
+</body>
+</html>
