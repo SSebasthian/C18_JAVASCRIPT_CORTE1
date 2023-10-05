@@ -1,14 +1,14 @@
 
 // LISTADO
 
-const input = document.querySelector(".inputform");
-const AñadirButon = document.querySelector(".BotonDeAgregar");
+const input = document.querySelector("input");
+const AñadirButon = document.querySelector(".BotonAgregar");
 const ul = document.querySelector("ul");
 
 AñadirButon.addEventListener("click", (evento) => {
-    evento.preventDefault();
+    evento.preventDefault(); //Evita que la pagina se recargue
 
-  const text = input.value;
+  const text = input.value; //Guarda valor ingresado
 
   if (text !== "") {
     const li = document.createElement("li");
@@ -22,6 +22,8 @@ AñadirButon.addEventListener("click", (evento) => {
     input.value = "";
   }
 });
+
+
 // BOTON ELIMINAR
 
 function addDeleteBtn() {

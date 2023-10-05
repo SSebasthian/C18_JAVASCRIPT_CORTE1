@@ -6,13 +6,17 @@ body{
 
 /**************************************************************/
 /*OCULTAR CONTENIDO*/
+.EleccionPrincipalxD{
+    display: block;
+}
 #contenido-uno{
     display: none;
 }
 /*OCULTAR CONTENIDO*/
 #contenido-dos{
-    display: none;
+    display: block;
 }
+
 
 
 /**************************************************************/
@@ -39,7 +43,7 @@ body{
     overflow: hidden;
     display: block;
 }
-#BotonMostrarDos{
+ #BotonMostrarDos{
     position: absolute;
     top: 75%;
     left: 50%;
@@ -61,7 +65,7 @@ body{
     overflow: hidden;
     display: block;
 }
-#BotonOcultarUno{
+ #BotonOcultarUno{
     position: absolute;
     top: 85%;
     left: 50%;
@@ -82,7 +86,7 @@ body{
     box-shadow: inset 0 0 30px rgba(0,0,0,1);
     overflow: hidden;
 }
-#BotonOcultarDos{
+ #BotonOcultarDos{
     position: absolute;
     top: 79%;
     left: 72%;
@@ -103,8 +107,8 @@ body{
     box-shadow: inset 0 0 30px rgba(0,0,0,1);
     overflow: hidden;
 }
-#BotonMostrarUno::before,
-#BotonMostrarDos::before
+ #BotonMostrarUno::before,
+ #BotonMostrarDos::before
 {
     content: '';
     position: absolute;
@@ -116,16 +120,16 @@ body{
     transition: .7s;
     transform: skewX(-15deg);
 }
-#BotonMostrarUno:hover:before,
-#BotonMostrarDos:hover:before,
+ #BotonMostrarUno:hover:before,
+ #BotonMostrarDos:hover:before,
 #BotonOcultarUno:hover:before,
-#BotonOcultarDos:hover:before{
+ #BotonOcultarDos:hover:before{
     left: 500px;
 }
-#BotonMostrarUno::after,
-#BotonMostrarDos::after,
-#BotonOcultarUno::after,
-#BotonOcultarDos::after{
+ #BotonMostrarUno::after,
+ #BotonMostrarDos::after,
+ #BotonOcultarUno::after,
+ #BotonOcultarDos::after{
     content: '';
     position: absolute;
     top: 0;
@@ -137,13 +141,13 @@ body{
     transform: skewX(-15deg);
     transition-delay: .3s;
 }
-#BotonMostrarUno:hover::after,
-#BotonMostrarDos:hover::after,
-#BotonOcultarUno:hover::after,
-#BotonOcultarDos:hover::after{
+ #BotonMostrarUno:hover::after,
+ #BotonMostrarDos:hover::after,
+ #BotonOcultarUno:hover::after,
+ #BotonOcultarDos:hover::after{
     left: 100px;
 }
-#YoInicio{
+ #YoInicio{
     position: absolute;
     top: 30%;
     left: 48%;

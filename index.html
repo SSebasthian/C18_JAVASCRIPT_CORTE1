@@ -8,8 +8,12 @@
     <script src="EleccionPrincipal.js"></script>
 </head>
 <body>
-    <img src="Yo con PC.png" alt="YO" id="YoInicio">
-    <button id="BotonMostrarUno" onclick="mostrarUno();">Monstrar Portafolio</button>
+    <div class="EleccionPrincipalxD">
+        <img src="Yo con PC.png" alt="YO" id="YoInicio">
+        <button id="BotonMostrarUno" href="#" onclick="mostrarUno();">Monstrar Portafolio</button>
+        <a id="BotonMostrarDos" href="Tarea.html">Monstrar Lista</a>
+    </div>
+    
     <div id="contenido-uno">
        
         <nav>
@@ -92,28 +96,29 @@
         </footer>
         
     </div>
-    <button id="BotonMostrarDos" onclick="mostrarDos();">Monstrar Lista</button>
-    <div id="contenido-dos" >
+    
+    <!-- <div id="contenido-dos" >
         <img src="Yo Cuerpo Entero.png" id="YoEntero">
         <button id="BotonOcultarDos" onclick="OcultarDos();">Ocultar Contenido</button>
-    <div class="Contenedor_Tarea">
-        <h1 id="TituloTarea">Lista de Tareas</h1>
-        
-        <div id="Buscador">
-            <form>
-                <input type="text" placeholder=""  class="inputform">
-                <label for="">Agregar tarea...</label>
-                <button class="BotonAgregar">+</button>
-            </form>
+
+        <div class="Contenedor_Tarea">
+            <h1 id="TituloTarea">Lista de Tareas</h1>
+            
+            <div id="Buscador">
+                <form>
+                    <input type="text" placeholder="" required>
+                    <label for="">Agregar tarea...</label>
+                    <button class="BotonAgregar">+</button>
+                </form>
+            </div>
+            <div class="li-añadido">
+                <ul>
+                    
+                </ul>
+            </div>
+            
         </div>
-        <div class="li-añadido">
-            <ul>
-                
-            </ul>
-        </div>
-        
     </div>
-    </div>
-    <script src="ListAgregarQuitar.js"></script>
+    <script src="ListAgregarQuitar.js"></script> -->
 </body>
 </html>
